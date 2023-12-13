@@ -3,13 +3,14 @@ import { StyleSheet, View } from 'react-native'
 import CategoryTextSlider from '../Components/Home/CategoryTextSlider'
 import Color from '../Shared/Color'
 import { Ionicons } from '@expo/vector-icons';
+import { Text } from 'react-native-web';
 const Home=() =>{
   return (
     <View>
 
         <View>
             <Text style={styles.appName} >
-             TalonNews 01
+             Talon News
             </Text>
 
             <Ionicons name="notifications-outline" size={24} color="black" />

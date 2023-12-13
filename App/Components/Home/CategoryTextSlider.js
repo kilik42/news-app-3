@@ -37,7 +37,7 @@ const  CategoryTextSlider=() =>{
     }
   ];
   return (
-    <View >
+    <View style={{marginTop: 10}}>
           <FlatList 
           data={categoryList}
           horizontal

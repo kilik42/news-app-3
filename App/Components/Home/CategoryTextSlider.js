@@ -40,10 +40,18 @@ const  CategoryTextSlider=() =>{
     <View >
           <FlatList 
           data={categoryList}
+          horizontal
+          showsHorizontalScrollIndicator={false}
           keyExtractor={item=>item.id.toString()}
           renderItem={({item})=>(
             <TouchableOpacity >
-                 {item.name}
+               <Text style={{
+                
+                marginRight:15,
+                fontSize:20,
+                fontWeight:'bold',
+                
+                }}> {item.name}</Text> 
               </TouchableOpacity>
           )}
             />

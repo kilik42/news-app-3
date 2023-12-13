@@ -8,7 +8,7 @@ const Home=() =>{
   return (
     <View>
 
-        <View>
+        <View  style={styles.header}>
             <Text style={styles.appName} >
              Talon News
             </Text>
@@ -30,6 +30,13 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
         color: Color.primary
-    }   
-    })
+    }  ,
+    header: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 20 ,
+        padding: 20
+    }
+  })
 export default Home
